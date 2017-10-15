@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.modal-header:hover { 
+    background-color: #74C2E1;
+}
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold,italics;
+}
+
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor : pointer;
+}
+.modal {
+    margin: 10px;
+	z-index: 1 ;
+    overflow: auto ; 
+    background-color: rgba(0,0,0,0.3); /* Black and white opacity */
+}
+
+.modal-inside {
+    position: relative;
+    background-color: #ffffff;
+    margin: 20px 20px 20px 100px;
+    border: 2px solid #B22222;
+	border-radius: 15px 100px;
+    width: 85%;
+}
+
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #B22222;
+    color: black;
+    text-align: center;
+	    border: 2px solid black;
+	border-radius: 10px 50px;
+	width: 80%;
+	margin-top:2px;
+	margin-left: 100px;
+}
+
+.modal-body {
+	text-align:center,justify;
+	padding: 10px 95px;}
+</style>
+</head>
+<body>
+
+<h2>Dialog Modal</h2>
+
+<button id="myBtn">Open Modal</button>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-inside">
+    <div class="modal-header">
+
+      <span class="close">&times;</span>
+      <h1>Modal Header</h1>
+    </div>
+    <div class="modal-body">
+      <p>Some text in it - My modal 1</br></br>	
+	  <img src="Welcome.jpg"  width = 950px; height = 280px;></img>
+	  </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById('myModal');
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+
+    modal.style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>
