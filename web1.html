@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+<!---Navbar--->
+
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav a {
+  font-family: "Times New Roman", Times, serif;
+  float: left;
+  display: block;
+  color: #4A5252;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #C4D4D5;
+  color: grey;
+}
+
+.topnav a.active {
+    background-color: #646D6D;
+    color: white;
+}
+/* form */
+
+input[type=text], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    resize: vertical;
+	border-radius: 8px;
+}
+
+input[type=submit] {
+ 	 margin-left: 13%;
+    background-color: #4CAAA0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+	
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #DCF3F5;
+    padding: 20px;
+	margin : 40px;
+	border-radius: 10px;
+
+}
+
+
+/* footer */
+.cont {
+    border-radius: 5px;
+    background-color: #485064;
+    padding: 20px;
+    color: #E4F1F1;
+	font-size : 20px;
+}
+
+
+
+</style>
+</head>
+<body>
+		
+	    <h1 align="center" ><font size="100" color="#485064">Practice Page 1</font></h1>
+		
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">Pricing</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<!---form--->
+
+<p></p>
+<div class="container">
+  <form action="/action_page.php">
+		<p></p>
+	<label for="fname">Name	: </label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." style="width:400px">
+<p></br></p>
+    <label for="country">Country : </label>
+    <select id="country" name="country" style="width:400px">
+      <option value="australia">India</option>
+      <option value="canada">Germany</option>
+      <option value="usa">USA</option>
+    </select>
+<p></br></p>
+    <label for="subject">Describe yourself</label>
+	<p></p>
+
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+<p></br></p>
+
+    <input type="submit" value="Submit">
+
+
+
+</form>
+</div>
+
+<div class="cont">
+  <p>Posted by: Sparsh</p>
+  <p>Contact information : Mr Sparsh Jain</p>
+
+</div>
+
+</body>
+</html>
+
+
